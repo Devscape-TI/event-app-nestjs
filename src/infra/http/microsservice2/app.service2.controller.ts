@@ -17,8 +17,8 @@ export class AppService2Controller {
   })
   @Post('sns/listen/event/created-user')
   listenEventUserCreated(@Req() req, @Body() body: UserCreatedEventDtoBody) {
-    console.log('call event')
-    console.log(req)
+    console.log('call event');
+    console.log(req);
     console.log(body);
     const payloadMessage = JSON.stringify(body.Message);
     console.log(payloadMessage);
